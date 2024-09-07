@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Verdana";
+  src: url("../public/fonts/verdana.ttf");
+}
+
+@font-face {
+  font-family: "Verdana Bold";
+  src: url("../public/fonts/verdana-bold.ttf");
+}
+
+@font-face {
+  font-family: "Made Mirage";
+  src: url("../public/fonts/Made_Mirage_Regular.otf");
+}
+
+@font-face {
+  font-family: "Made Mirage Bold";
+  src: url("../public/fonts/Made_Mirage_Bold.otf");
+}
