@@ -1,12 +1,12 @@
-import ice1 from "../assets/coffee-scoops-green.webp";
+import ice1 from "../assets/peanut-scoops-orange.webp";
 import ice2 from "../assets/vanilla-scoops-yellow.webp";
-import ice3 from "../assets/peanut-scoops-orange.webp";
+import ice3 from "../assets/chocolate-scoops-pink.webp";
 import { useState } from "react";
 
 const FLAVORS = [
   { label: "Vanilla gelato", color: "#EBFFF4", src: ice2 },
   { label: "Choco cookies", color: "#FCE5DD", src: ice3 },
-  { label: "Mango gelato", color: "#E4F6BD", src: ice1 },
+  { label: "Peanut", color: "#E4F6BD", src: ice1 },
 ];
 const totalFlavors = FLAVORS.length;
 
