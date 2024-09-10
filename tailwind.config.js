@@ -5,10 +5,10 @@ export default {
     extend: {
       colors: {
         "custom-red": "#BF3434",
-        "custom-brown": "#401C0F",
-        "custom-yellow": "#F2B90C",
+        "custom-brown": "#361A0C",
+        "custom-yellow": "#F6BF04",
         "custom-blue": "#5EB5BF",
-        "cutom-pink": "#F22294",
+        "custom-pink": "#FF2193",
       },
       fontFamily: {
         verdana: ["Verdana", "sans-serif"],

@@ -21,3 +21,63 @@
   font-family: "Made Mirage Bold";
   src: url("/fonts/Made_Mirage_Bold.otf");
 }
+
+.rugby-button {
+  border-radius: 90%;
+  position: relative;
+  box-shadow: 0px 4px 0px 0px #fff;
+}
+
+.rugby-button:hover {
+  box-shadow: 0px 4px 0px 0px #000;
+}
+
+.rugby-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100% / 50%;
+  z-index: -1;
+}
+
+.flavors-section {
+  position: relative;
+}
+
+.flavors-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse 75% 100% at 50% 100%,
+    #f6bf04 100%,
+    transparent 100%
+  );
+  z-index: 2;
+}
+
+.flavors-section-content {
+  position: relative;
+  z-index: 2;
+}
+
+.flavor-buttons-container {
+  position: absolute;
+  z-index: 3;
+  width: 60%;
+}
+
+.flavor-buttons {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 30px;
+  margin: 0 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.flavor-buttons:hover {
+  transform: translateY(-10px);
+}

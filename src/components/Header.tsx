@@ -1,7 +1,6 @@
-import React from "react";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { motion } from "framer-motion";
 import defaultProfilePic from "../assets/men_profile_pic.png";
+import { TbMenuDeep } from "react-icons/tb";
 
 const routes = [
   { label: "About", href: "#" },
@@ -13,10 +12,10 @@ const routes = [
 
 const MENU_ICON_SIZE = 28;
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <nav
-      className="bg-custom-brown text-white font-made-mirage-bold px-4 py-6"
+      className="bg-custom-brown text-white font-made-mirage-bold px-4 py-6 mb-6 w-full"
       role="navigation"
       aria-label="Main navigation"
     >
@@ -39,7 +38,7 @@ const Header: React.FC = () => {
           {routes.map((route) => (
             <a
               href={route.href}
-              className="hover:text-custom-yellow transition duration-300 focus:outline-none focus:ring-2 focus:ring-custom-yellow"
+              className="hover:text-custom-yellow transition duration-150"
               aria-label={route.label}
             >
               {route.label}
@@ -47,13 +46,16 @@ const Header: React.FC = () => {
           ))}
         </motion.div>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <img
             src={defaultProfilePic}
             alt="User Avatar"
             className="rounded-full w-10 h-10 object-cover bg-custom-yellow"
           />
-          <HiOutlineMenuAlt2 size={MENU_ICON_SIZE} />
+          <TbMenuDeep
+            size={MENU_ICON_SIZE}
+            className="transform scale-x-[-1]"
+          />
         </div>
       </div>
     </nav>
